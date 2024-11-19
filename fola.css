@@ -1,0 +1,182 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  color: #aaa;
+}
+
+/* Navbar 3D effect with black background */
+.navbar {
+  background-color: black;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  background-color: #333;
+}
+
+.navbar-nav .nav-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Blue outline when focused */
+}
+
+/* Home Section Background Image */
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('aa\ \(1\).png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.card-body h5, .card-body p {
+  color: #ddd;
+}
+
+#contact form .form-control, #contact form button {
+  margin-bottom: 1rem;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+/* Styling the nav links and home text */
+#home h1 {
+  color: #00BFFF; /* You can change the text color here */
+}
+/* Restrict project card size */
+.card {
+  height: 400px; /* Set a consistent height for all project cards */
+  overflow: hidden; /* Ensure content does not overflow */
+  border-radius: 10px; /* Add rounded corners */
+}
+
+/* Restrict image size in project cards */
+.card img {
+  height: 200px; /* Set a fixed height for the image */
+  width: 100%; /* Ensure the image spans the width of the card */
+  object-fit: cover; /* Crop the image if it exceeds the height */
+  border-radius: 10px; /* Ensure the image matches the card's rounded corners */
+}
+
+/* Align card text and buttons properly */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out text and buttons */
+  height: calc(100% - 200px); /* Adjust for the image height */
+}
+
+/* Ensure About Me section content stays in its boundaries */
+#about {
+  overflow: hidden; /* Prevent any content from spilling out */
+}
+/* Full-screen About Me Section */
+#about {
+  min-height: 100vh; /* Ensures it fills the full height of the screen */
+  display: flex;
+  align-items: center; /* Vertically centers the content */
+  justify-content: center; /* Horizontally centers the content */
+  background-color: #3C3B50; /* Background color for the About Me section */
+  overflow: hidden; /* Prevents content overflow */
+  color: rgb(37, 85, 173); /* Ensure text is legible */
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Larger About Me Image Card */
+.about-image-card {
+  background-color: #3C3B50; /* Match About Me section background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 15px; /* Space between the card border and image */
+  box-shadow: 0 4px 6px rgba(12, 2, 2, 0.486); /* Subtle shadow for depth */
+  width: 350px; /* Increased width */
+  height: 500px; /* Increased height for square card */
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+
+/* Image inside the card */
+.about-image-card img {
+  width: 100%; /* Image scales to fit the card width */
+  height: 500px; /* Maintain the aspect ratio */
+  border-radius: 15px; /* Rounded image corners */
+  display: block; /* Eliminate spacing issues */
+}
+.icon-container {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  gap: 15px; /* Add spacing between the icons */
+  flex-wrap: wrap; /* Allow icons to wrap to the next line if necessary */
+}
+
+.skill-icon {
+  width: 40px; /* Set desired width */
+  height: 40px; /* Set desired height */
+  border-radius: 5px; /* Add slight rounding to the corners if needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+}
+#projects {
+  min-height: 100vh; /* Ensures the section fills the entire screen */
+  display: flex; /* Enable flexbox for alignment */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background-color: #2D2C3E; /* Section background color */
+}
+
+#projects .container {
+  width: 100%; /* Ensure the container spans full width */
+  max-width: 1200px; /* Limit the maximum width for better design */
+}
+
+#projects .row {
+  width: 100%; /* Ensures the row spans full width */
+  display: flex; /* Use flexbox for equal card alignment */
+  justify-content: space-between; /* Add spacing between the cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+#projects .card {
+  flex: 1 1 30%; /* Cards take up 30% of the row width */
+  max-width: 500%; /* Prevent cards from exceeding 30% width */
+  height: 450px; /* Adjust height for longer cards */
+  margin: 1rem; /* Add spacing between cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+#projects .card img {
+  height: 200px; /* Consistent image height */
+  object-fit: cover; /* Prevent image distortion */
+}
+
+#projects .card:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+#contact {
+  scroll-margin-top: 10px; /* Adjust the offset to prevent the navbar from hiding content */
+}
+
+
+  
+
+
+
+
+
+
